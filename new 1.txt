@@ -1,0 +1,25 @@
+https://habr.com/ru/articles/246699/
+
+
+После файла app_4.py
+
+Пример запроса в ---> curl -i -H
+
+C:\Users\alexe>curl -i -H "Content-Type: application/json" -X POST -d "{""title"":""Read a book""}" http://localhost:5000/tutorials
+
+Ответ:
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.6 Python/3.8.9
+Date: Mon, 02 Dec 2024 21:17:55 GMT
+Content-Type: application/json
+Content-Length: 102
+Connection: close
+
+{
+  "task": {
+    "description": "",
+    "done": false,
+    "id": 3,
+    "title": "Read a book"
+  }
+}
